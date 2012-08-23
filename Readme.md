@@ -53,4 +53,4 @@ Author
 [Michael Grosser](http://grosser.it)<br/>
 michael@grosser.it<br/>
 License: MIT<br/>
-[![Build Status](https://secure.travis-ci.org/grosser/shoulda_let.png)](http://travis-ci.org/grosser/shoulda_let)
+[![Build Status](https://secure.travis-ci.org/grosser/shoulda-let.png)](http://travis-ci.org/grosser/shoulda-let)
