@@ -1,6 +1,8 @@
 require "shoulda"
+require "shoulda/context"
 
-Shoulda::Context.class_eval do
+context_class = (Shoulda::VERSION >= "3.0.0" ? Shoulda::Context::Context : Shoulda::Context)
+context_class.class_eval do
   def let(name, &block)
     @let ||= {}
     if block
@@ -11,7 +13,8 @@ Shoulda::Context.class_eval do
   end
 end
 
-Shoulda::InstanceMethods.class_eval do
+instance_class = (Shoulda::VERSION >= "3.0.0" ? Test::Unit::TestCase : Shoulda::InstanceMethods)
+instance_class.class_eval do
   def let(name)
     @let ||= {}
     @let.fetch(name) do

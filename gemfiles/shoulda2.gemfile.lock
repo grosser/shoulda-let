@@ -1,0 +1,25 @@
+PATH
+  remote: /Users/mgrosser/code/tools/shoulda-let
+  specs:
+    shoulda-let (0.0.1)
+      shoulda
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    appraisal (0.4.1)
+      bundler
+      rake
+    rake (0.9.2.2)
+    shoulda (2.11.3)
+    test-unit (2.5.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  appraisal
+  rake
+  shoulda (~> 2.11)
+  shoulda-let!
+  test-unit (>= 2.5.1)

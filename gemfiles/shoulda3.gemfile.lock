@@ -1,5 +1,5 @@
 PATH
-  remote: .
+  remote: /Users/mgrosser/code/tools/shoulda-let
   specs:
     shoulda-let (0.0.1)
       shoulda
@@ -30,5 +30,6 @@ PLATFORMS
 DEPENDENCIES
   appraisal
   rake
+  shoulda (~> 3.1)
   shoulda-let!
   test-unit (>= 2.5.1)
