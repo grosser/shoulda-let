@@ -17,7 +17,7 @@ context_class.class_eval do
 
   def let!(name, &block)
     let(name, &block)
-    setup { name }
+    setup { let(name) }
   end
 
   def let_defined?(name)
