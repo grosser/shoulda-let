@@ -23,6 +23,10 @@ Usage
         should "be something" do
           assert_equal "something", @result
         end
+
+        should "be available as an instance method" do
+          assert_equal "something", thing
+        end
       end
 
       context "with cache" do
@@ -32,7 +36,7 @@ Usage
           assert_equal @result, let(:thing)
         end
 
-        should "be different" do
+        should "be different across test invocations" do
           assert_not_equal $last_thing, let(:thing)
         end
 
