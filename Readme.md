@@ -50,6 +50,17 @@ Usage
           assert_equal "parent", @result
         end
       end
+
+      context "let!" do
+        let!(:thing) do
+          @thing_instantiated = true
+          'anything'
+        end
+
+        should "automatically be evaluated" do
+          assert @thing_instantiated
+        end
+      end
     end
 <!-- example -->
 Author

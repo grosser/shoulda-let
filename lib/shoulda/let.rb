@@ -15,6 +15,11 @@ context_class.class_eval do
     end
   end
 
+  def let!(name, &block)
+    let(name, &block)
+    setup { name }
+  end
+
   def let_defined?(name)
     name = name.to_sym
     ( @let && @let.has_key?(name) ) ||
