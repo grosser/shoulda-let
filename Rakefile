@@ -1,5 +1,6 @@
 require 'appraisal'
 require 'bundler/gem_tasks'
+require 'bump/tasks'
 
 task :test do
   sh "ruby test/shoulda_let_test.rb"
