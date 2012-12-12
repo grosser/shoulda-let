@@ -1,6 +1,5 @@
 module Shoulda
   module Let
-
     module ContextSupport
       # setup method used outside of should blocks
       # let(:foo){ "Foo" }
@@ -21,10 +20,9 @@ module Shoulda
 
       def let_defined?(name)
         name = name.to_sym
-        ( @let && @let.has_key?(name) ) ||
-        ( parent.respond_to?(:let_defined?) && parent.let_defined?(name) )
+        ( @let and @let.has_key?(name) ) ||
+          ( parent.respond_to?(:let_defined?) and parent.let_defined?(name) )
       end
     end
-
   end
 end

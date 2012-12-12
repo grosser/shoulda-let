@@ -1,6 +1,5 @@
 module Shoulda
   module Let
-
     module TestCaseSupport
       # instance method used inside of should block
       # assert_equal @result, let(:foo)
@@ -11,7 +10,7 @@ module Shoulda
 
       def method_missing(name, *arguments, &block)
         name = name.to_sym
-        if arguments.length == 0 && block.nil? && @shoulda_context.let_defined?(name)
+        if arguments.length == 0 and not block and @shoulda_context.let_defined?(name)
           let(name)
         else
           super
@@ -19,10 +18,8 @@ module Shoulda
       end
 
       def respond_to?(name, *arguments, &block)
-        ( @shoulda_context && @shoulda_context.let_defined?(name) ) || super
+        ( @shoulda_context and @shoulda_context.let_defined?(name) ) or super
       end
-
     end
-
   end
 end
