@@ -85,7 +85,11 @@ Usage
 <!-- example -->
 Author
 ======
+
+### [Contributors](https://github.com/grosser/shoulda-let/contributors)
+ - [James Rosen](https://github.com/jamesarosen)
+
 [Michael Grosser](http://grosser.it)<br/>
 michael@grosser.it<br/>
 License: MIT<br/>
-[![Build Status](https://secure.travis-ci.org/grosser/shoulda-let.png)](http://travis-ci.org/grosser/shoulda-let)
+[![Build Status](https://travis-ci.org/grosser/shoulda-let.png)](http://travis-ci.org/grosser/shoulda-let)
