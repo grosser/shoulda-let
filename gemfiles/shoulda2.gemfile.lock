@@ -10,6 +10,7 @@ GEM
     appraisal (0.4.1)
       bundler
       rake
+    bump (0.3.7)
     rake (0.9.2.2)
     shoulda (2.11.3)
     test-unit (2.5.1)
@@ -19,6 +20,7 @@ PLATFORMS
 
 DEPENDENCIES
   appraisal
+  bump
   rake
   shoulda (~> 2.11)
   shoulda-let!
