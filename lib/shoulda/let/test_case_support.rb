@@ -10,7 +10,7 @@ module Shoulda
 
       def method_missing(name, *arguments, &block)
         name = name.to_sym
-        if arguments.length == 0 and not block and @shoulda_context.let_defined?(name)
+        if @shoulda_context && arguments.length == 0 && !block && @shoulda_context.let_defined?(name)
           let(name)
         else
           super
