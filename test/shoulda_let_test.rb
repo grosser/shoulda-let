@@ -8,10 +8,14 @@ class ShouldaLetTest < Test::Unit::TestCase
     eval example
   end
 
-  def test_undefined_method
-    undefined_let
-  rescue NoMethodError
-    flunk "Should pass through to regular Test::Unit::TestCase method_missing"
-  rescue NameError
+  should "pass through to regular Test::Unit::TestCase method_missing" do
+    begin
+      undefined_let
+    rescue NoMethodError
+      flunk
+    rescue NameError
+    else
+      flunk
+    end
   end
 end
