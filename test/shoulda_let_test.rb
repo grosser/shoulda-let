@@ -7,4 +7,11 @@ class ShouldaLetTest < Test::Unit::TestCase
     example = File.read(File.expand_path("../../Readme.md", __FILE__)).match(/<!-- example -->(.*)<!-- example -->/m)[1]
     eval example
   end
+
+  def test_undefined_method
+    undefined_let
+  rescue NoMethodError
+    flunk "Should pass through to regular Test::Unit::TestCase method_missing"
+  rescue NameError
+  end
 end
