@@ -88,6 +88,7 @@ Author
 
 ### [Contributors](https://github.com/grosser/shoulda-let/contributors)
  - [James Rosen](https://github.com/jamesarosen)
+ - [Steven Davidovitz](https://github.com/steved555)
 
 [Michael Grosser](http://grosser.it)<br/>
 michael@grosser.it<br/>
