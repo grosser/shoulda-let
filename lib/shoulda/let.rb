@@ -8,6 +8,12 @@ context_class.class_eval do
   include Shoulda::Let::ContextSupport
 end
 
+if defined?(MiniTest)
+  MiniTest::Unit::TestCase.class_eval do
+    include Shoulda::Let::TestCaseSupport
+  end
+end
+
 Test::Unit::TestCase.class_eval do
   include Shoulda::Let::TestCaseSupport
 end
