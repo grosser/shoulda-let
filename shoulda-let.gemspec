@@ -1,6 +1,6 @@
 name = "shoulda-let"
 
-Gem::Specification.new name, "0.0.5" do |s|
+Gem::Specification.new name, "0.0.6" do |s|
   s.summary = "A simple let for shoulda"
   s.authors = ["Michael Grosser"]
   s.email = "michael@grosser.it"
