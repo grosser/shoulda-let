@@ -6,6 +6,7 @@ gem "bump"
 gem "rake"
 gem "test-unit", ">=2.5.1"
 gem "appraisal"
+gem "wwtd"
 gem "shoulda", "~>2.11"
 
 gemspec :path=>"../"
